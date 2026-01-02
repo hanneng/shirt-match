@@ -1,0 +1,33 @@
+# Example configuration for hanneng/shirt-match
+# Purpose: high-level settings for the shirt-match application
+version: 1.0
+
+app:
+  name: shirt-match
+  environment: production
+  debug: false
+
+match:
+  # similarity threshold (0.0-1.0)
+  threshold: 0.85
+  # maximum results returned per query
+  max_results: 10
+
+colors:
+  - red
+  - blue
+  - green
+  - black
+  - white
+
+logging:
+  level: info
+  format: json
+
+# Add repo-specific settings below
+# database:
+#   host: db.example.com
+#   port: 5432
+#   name: shirt_match
+#   user: ${DB_USER}
+#   password: ${DB_PASS}
